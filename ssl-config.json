@@ -1,0 +1,21 @@
+{
+  "general": {
+    "commonName": "*.ciisummit.com",
+    "organization": "<Not Part Of Certificate>",
+    "organizationalUnit": "<Not Part Of Certificate>"
+  },
+  "issuer": {
+    "commonName": "Sectigo RSA Domain Validation Secure Server CA",
+    "organization": "Sectigo Limited",
+    "organizationalUnit": "<Not Part Of Certificate>"
+  },
+  "dates": {
+    "issuedOn": "Sunday, December 15, 2024 at 5:30:00 AM",
+    "expiresOn": "Thursday, January 15, 2026 at 5:29:59 AM"
+  },
+  "certificate": {
+    "value": "a0d17becc31c9f6d9d4c751a7e4f9cf082cf5361950e0f804233b29879aaa9b4",
+    "publicKey": "82c40474bdd863a2f1332ef91827a6d8cf901d5a903769c5c20715f6c317ba32"
+  },
+  "siteLink": "https://ciisummit.com/cybershield-hackathon-2025/"
+}

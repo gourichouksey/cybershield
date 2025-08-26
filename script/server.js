@@ -1,10 +1,21 @@
-// Backend Node.js/Express server for handling APK uploads and analysis
+// Backend Node.js/Express server with HTTPS configuration
 
 const express = require('express');
+const fs = require('fs');
+const https = require('https');
 const multer  = require('multer');
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
+
+// OPTIONAL: Load certification configuration
+// In a real-world scenario, you'd use actual certificate/key files provided by your certificate authority.
+// Here we load our configuration that simulates the certificate details.
+const sslConfig = JSON.parse(fs.readFileSync(path.join(__dirname, 'ssl-config.json'), 'utf8'));
+
+// For demonstration, log out the certificate details (you can remove this in production)
+console.log("Using certificate for:", sslConfig.general.commonName);
+console.log("Issued by:", sslConfig.issuer.commonName);
 
 // Configure Multer storage options, including file validation for APKs
 const storage = multer.diskStorage({
@@ -52,13 +63,7 @@ app.post('/scan', upload.single('apk'), async (req, res) => {
 
 // Dummy analysis function (replace with actual APK analysis logic)
 async function analyzeAPK(filePath) {
-  // In a real-world scenario, you might:
-  // - Decompile the APK via Jadx
-  // - Parse AndroidManifest.xml to extract metadata and permissions
-  // - Validate and inspect the certificate
-  // - Run the extracted features through a pre-trained Machine Learning model
-  
-  // For now, return static analysis data
+  // Simulated analysis data
   return {
     metadata: {
       packageName: "com.example.app",
@@ -67,13 +72,23 @@ async function analyzeAPK(filePath) {
     },
     permissions: ["INTERNET", "READ_PHONE_STATE", "ACCESS_NETWORK_STATE"],
     certificate: {
-      issuer: "CN=Example CA",
+      issuer: sslConfig.issuer.commonName,
       valid: true
     },
     mlPrediction: "82% suspicious"
   };
 }
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+// Create an HTTPS server using the dummy certificate data.
+// In production, you would use fs.readFileSync() to load your real certificate and key files.
+const httpsOptions = {
+  // The following keys should typically point to your actual certificate and key files.
+  // Here we simulate the values from the configuration for demonstration.
+  cert: sslConfig.certificate.value,
+  key: sslConfig.certificate.publicKey
+};
+
+// Starting the HTTPS server
+https.createServer(httpsOptions, app).listen(port, () => {
+  console.log(`HTTPS Server is running on port ${port}`);
 });
