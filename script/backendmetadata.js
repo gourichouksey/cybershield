@@ -1,51 +1,48 @@
-// Node.js Backend Script to Read Project Metadata
-// This script reads the project folder recursively, retrieves package metadata from package.json (if it exists), and computes the total size of all files.
-
+// A simple stub for getProjectMetadata.
+// In a real scenario, this might read your package.json, compute the size of your project, etc.
 const fs = require('fs');
 const path = require('path');
 
-// Function to retrieve package metadata if package.json exists
-function getPackageMetadata(projectDir) {
-  let packageName = 'N/A';
-  let version = 'N/A';
-  const packagePath = path.join(projectDir, 'package.json');
-  if (fs.existsSync(packagePath)) {
-    try {
-      const packageData = JSON.parse(fs.readFileSync(packagePath, 'utf8'));
-      packageName = packageData.name || packageName;
-      version = packageData.version || version;
-    } catch (err) {
-      console.error('Error reading package.json:', err);
-    }
-  }
-  return { packageName, version };
-}
-
-// Function to calculate the total size of all files in the directory recursively
-function getDirectorySize(dir) {
-  let totalSize = 0;
-  function traverse(currentPath) {
-    const files = fs.readdirSync(currentPath);
-    for (const file of files) {
-      const fullPath = path.join(currentPath, file);
-      const stats = fs.statSync(fullPath);
-      if (stats.isDirectory()) {
-        traverse(fullPath);
-      } else {
-        totalSize += stats.size;
-      }
-    }
-  }
-  traverse(dir);
-  return totalSize;
-}
-
-// Function to gather project metadata
 function getProjectMetadata(projectDir) {
-  const { packageName, version } = getPackageMetadata(projectDir);
-  const size = getDirectorySize(projectDir);
-  return { package: packageName, version, size };
+  let pkg = "—";
+  let version = "—";
+  let size = "—";
+
+  // Example: attempt to read package.json
+  try {
+    const pkgPath = path.join(projectDir, 'package.json');
+    if (fs.existsSync(pkgPath)) {
+      const pkgData = JSON.parse(fs.readFileSync(pkgPath, 'utf8'));
+      pkg = pkgData.name || "—";
+      version = pkgData.version || "—";
+    }
+  } catch (err) {
+    console.error("Error reading package.json:", err);
+  }
+
+  // Example: Compute total size of files in current directory
+  // You can implement a more refined approach if needed.
+  try {
+    function getSize(dir) {
+      let totalSize = 0;
+      const files = fs.readdirSync(dir);
+      files.forEach(file => {
+        const fullPath = path.join(dir, file);
+        const stats = fs.statSync(fullPath);
+        if (stats.isDirectory()) {
+          totalSize += getSize(fullPath);
+        } else {
+          totalSize += stats.size;
+        }
+      });
+      return totalSize;
+    }
+    size = getSize(projectDir);
+  } catch (err) {
+    console.error("Error computing project size:", err);
+  }
+
+  return { package: pkg, version, size };
 }
 
-// Export the function for external use (e.g., in an Express API endpoint)
 module.exports = { getProjectMetadata };
