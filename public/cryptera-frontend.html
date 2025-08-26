@@ -1,235 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Cryptera APK Detector</title>
   <style>
-    /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
-    body {
-      background: #f9fafb;
-      color: #222;
-      line-height: 1.6;
-    }
-    /* Header */
-    header {
-      text-align: center;
-      padding: 2rem;
-      background: #0d47a1;
-      color: white;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-    }
-    header h1 {
-      margin-bottom: 0.5rem;
-    }
-    /* Upload Section */
-    .upload-box {
-      text-align: center;
-      background: white;
-      margin: 2rem auto;
-      padding: 2rem;
-      width: 90%;
-      max-width: 500px;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .upload-label {
-      display: block;
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-      cursor: pointer;
-    }
-    #apkUpload {
-      display: none;
-    }
-    .file-name {
-      font-size: 1rem;
-      margin-top: 0.5rem;
-      color: #555;
-    }
-    .hint {
-      font-size: 0.85rem;
-      color: #555;
-      margin-top: 0.5rem;
-    }
-    .scan-btn {
-      margin-top: 1.5rem;
-      padding: 0.7rem 1.5rem;
-      background: #0d47a1;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    .scan-btn:hover {
-      background: #1565c0;
-    }
-    /* Results Section */
-    .results {
-      width: 90%;
-      max-width: 900px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .results h2 {
-      margin-bottom: 1rem;
-    }
-    .status {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-    .status.suspicious {
-      color: #d32f2f;
-    }
-    .status.safe {
-      color: #2e7d32;
-    }
-    .progress-bar {
-      background: #eee;
-      border-radius: 10px;
-      height: 15px;
-      margin: 0.5rem 0;
-      overflow: hidden;
-    }
-    .progress {
-      background: #f44336;
-      height: 100%;
-    }
-    .risk-text {
-      margin-bottom: 1rem;
-      font-weight: bold;
-    }
-    /* Cards Layout */
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-    .card {
-      background: #fafafa;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    .card h3 {
-      margin-bottom: 0.5rem;
-      color: #0d47a1;
-    }
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
+    /* keep the styles inline — copy from your previous frontend */
+    body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background:#f9fafb; color:#222; }
+    header { text-align:center; padding:2rem; background:#0d47a1; color:#fff; border-bottom-left-radius:20px; border-bottom-right-radius:20px; }
+    .upload-box { background:#fff; margin:2rem auto; padding:2rem; width:90%; max-width:500px; border-radius:15px; box-shadow:0 4px 8px rgba(0,0,0,.1); text-align:center; }
+    .scan-btn { margin-top:1.5rem; padding:.7rem 1.5rem; background:#0d47a1; color:#fff; border:none; border-radius:10px; cursor:pointer; }
+    .results { width:90%; max-width:900px; margin:2rem auto; background:#fff; padding:2rem; border-radius:15px; box-shadow:0 4px 8px rgba(0,0,0,.1); }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; }
+    .card { background:#fafafa; padding:1rem; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,.05); }
+    .status.suspicious{color:#d32f2f;} .status.safe{color:#2e7d32;}
+    .progress-bar{background:#eee;border-radius:10px;height:15px;margin:.5rem 0;overflow:hidden}
+    .progress{background:#f44336;height:100%;width:0%}
   </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>Cryptera APK Detector</h1>
-    <p>Detect fake banking apps instantly</p>
-  </header>
+  <header><h1>Cryptera APK Detector</h1><p>Detect fake banking apps instantly</p></header>
 
-  <!-- Upload Section -->
   <section class="upload-box">
-    <label for="apkUpload" class="upload-label">📂 Upload APK File</label>
-    <input type="file" id="apkUpload" accept=".apk">
-    <div class="file-name" id="fileName">No file chosen</div>
-    <p class="hint">Supported file type: .apk (Max size: 50MB)</p>
+    <label for="apkUpload">📂 Upload APK File</label>
+    <input id="apkUpload" type="file" accept=".apk" />
+    <p class="hint">Supported: .apk (Max 50MB)</p>
     <button class="scan-btn" id="scanBtn">🔍 Scan Now</button>
+    <p id="uploadMessage" class="hint"></p>
   </section>
 
-  <!-- Results Section -->
-  <section class="results" id="resultsSection">
+  <section class="results">
     <h2>RESULTS</h2>
-    <div class="status" id="resultStatus">Waiting for scan...</div>
-    <div class="progress-bar" style="display:none;">
-      <div class="progress" style="width: 0%;"></div>
-    </div>
-    <p class="risk-text" id="riskText"></p>
-    <div class="cards" id="cardsContainer">
-      <!-- Cards will be populated after scan -->
+    <div id="statusEl" class="status suspicious">No scan yet</div>
+    <div class="progress-bar"><div id="progressEl" class="progress"></div></div>
+    <p id="riskText" class="risk-text">—</p>
+
+    <div class="cards">
+      <div class="card"><h3>Metadata</h3><p><b>Package:</b> <span id="metaPackage">—</span></p><p><b>Version:</b> <span id="metaVersion">—</span></p><p><b>Size:</b> <span id="metaSize">—</span></p></div>
+      <div class="card"><h3>Permission Analysis</h3><ul id="permissionsList"><li>—</li></ul></div>
+      <div class="card"><h3>Certificate & Signature</h3><p id="certInfo">—</p></div>
+      <div class="card"><h3>ML Prediction</h3><p><b>Malicious:</b> <span id="mlMalicious">—</span></p><p><b>Legit:</b> <span id="mlLegit">—</span></p><p id="mlReasons" style="font-size:.9rem;color:#555;"></p></div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>Made at National Cryptera Hackathon 2025 🚀 | Team Cryptera</p>
-  </footer>
+  <footer style="text-align:center;padding:1rem;margin-top:2rem;color:#555;">Made at National Cryptera Hackathon 2025 🚀 | Team Cryptera</footer>
 
   <script>
-    // Update file name when a file is selected
+    // If you run the backend at localhost:3000 leave BACKEND_URL as below.
+    // If you open the HTML with Live Server (127.0.0.1:5500) this will still work because CORS is enabled.
+    const BACKEND_URL = 'http://localhost:3000/api/scan';
+
     const apkInput = document.getElementById('apkUpload');
-    const fileNameDisplay = document.getElementById('fileName');
-    apkInput.addEventListener('change', function() {
-      if (apkInput.files.length > 0) {
-        fileNameDisplay.innerText = apkInput.files[0].name;
-      } else {
-        fileNameDisplay.innerText = "No file chosen";
-      }
+    const scanBtn = document.getElementById('scanBtn');
+    const uploadMessage = document.getElementById('uploadMessage');
+    const statusEl = document.getElementById('statusEl');
+    const progressEl = document.getElementById('progressEl');
+    const riskText = document.getElementById('riskText');
+    const metaPackage = document.getElementById('metaPackage');
+    const metaVersion = document.getElementById('metaVersion');
+    const metaSize = document.getElementById('metaSize');
+    const permissionsList = document.getElementById('permissionsList');
+    const certInfo = document.getElementById('certInfo');
+    const mlMalicious = document.getElementById('mlMalicious');
+    const mlLegit = document.getElementById('mlLegit');
+    const mlReasons = document.getElementById('mlReasons');
+
+    let selectedFile = null;
+    apkInput.addEventListener('change', e => {
+      selectedFile = e.target.files[0];
+      uploadMessage.textContent = selectedFile ? `Selected: ${selectedFile.name} (${(selectedFile.size/1024/1024).toFixed(2)} MB)` : '';
     });
 
-    // Handle scan button click: upload the APK file and update UI with scan results.
-    document.getElementById("scanBtn").addEventListener("click", function() {
-      if (apkInput.files.length === 0) {
-        alert("Please choose an APK file to scan.");
-        return;
-      }
-      const formData = new FormData();
-      formData.append("apkFile", apkInput.files[0]);
-      document.getElementById("resultStatus").innerText = "Scanning...";
-
-      fetch("/api/scan", {
-        method: "POST",
-        body: formData
-      })
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById("resultStatus").innerText = data.results;
-        // Build cards HTML based on returned scan details
-        const cardsHTML = `
-          <div class="card">
-            <h3>Metadata</h3>
-            <p><b>Package:</b> ${data.metadata.package}</p>
-            <p><b>Version:</b> ${data.metadata.version}</p>
-            <p><b>Size:</b> ${data.metadata.size}</p>
-          </div>
-          <div class="card">
-            <h3>Permission Analysis</h3>
-            <p>${data.permissionAnalysis}</p>
-          </div>
-          <div class="card">
-            <h3>Certificate & Signature</h3>
-            <p>${data.certificateSignature}</p>
-          </div>
-          <div class="card">
-            <h3>ML Prediction</h3>
-            <p><b>Malicious:</b> ${data.mlPrediction.malicious}</p>
-            <p><b>Legit:</b> ${data.mlPrediction.legit}</p>
-          </div>
-        `;
-        document.getElementById("cardsContainer").innerHTML = cardsHTML;
-        document.getElementById("riskText").innerText = "";
-      })
-      .catch(error => {
-        console.error("Error during scan:", error);
-        document.getElementById("resultStatus").innerText = "Error scanning file.";
-      });
+    scanBtn.addEventListener('click', async () => {
+      if (!selectedFile) return alert('Please select an APK first.');
+      setLoading(true); resetResults();
+      const fd = new FormData(); fd.append('apk', selectedFile);
+      try {
+        const res = await fetch(BACKEND_URL, { method:'POST', body: fd });
+        if (!res.ok) { const err = await res.json().catch(()=>({})); throw new Error(err.error || 'Server error'); }
+        const json = await res.json(); renderResults(json);
+      } catch (err) {
+        alert('Scan failed: ' + err.message);
+        statusEl.textContent = 'ERROR'; statusEl.classList.remove('safe'); statusEl.classList.add('suspicious');
+        progressEl.style.width = '100%'; riskText.textContent = 'Scan failed';
+      } finally { setLoading(false); }
     });
+
+    function setLoading(v) { scanBtn.disabled = v; scanBtn.textContent = v ? 'Scanning...' : '🔍 Scan Now'; }
+    function resetResults() {
+      statusEl.textContent = 'Scanning...'; statusEl.classList.remove('safe','suspicious'); riskText.textContent = 'Analyzing...';
+      progressEl.style.width = '5%'; metaPackage.textContent = '—'; metaVersion.textContent = '—'; metaSize.textContent = '—';
+      permissionsList.innerHTML = '<li>—</li>'; certInfo.textContent = '—'; mlMalicious.textContent = '—'; mlLegit.textContent = '—'; mlReasons.textContent = '';
+    }
+    function renderResults(json) {
+      metaPackage.textContent = json.metadata.packageName || '—';
+      metaVersion.textContent = json.metadata.version || '—';
+      metaSize.textContent = json.metadata.size || '—';
+      permissionsList.innerHTML = '';
+      if (json.permissions && json.permissions.length) {
+        json.permissions.forEach(p => {
+          const li = document.createElement('li');
+          const up = p.toUpperCase();
+          const isSusp = (json.permissionAnalysis && json.permissionAnalysis.suspicious && json.permissionAnalysis.suspicious.map(s=>s.toUpperCase()).includes(up));
+          li.textContent = (isSusp ? '❌ ' : '✅ ') + p;
+          permissionsList.appendChild(li);
+        });
+      } else permissionsList.innerHTML = '<li>None</li>';
+      certInfo.textContent = (json.certificate && json.certificate.found) ? `Found: ${json.certificate.file} (fingerprint: ${json.certificate.fingerprint})` : 'No signature file';
+      mlMalicious.textContent = json.mlPrediction?.malicious || '—';
+      mlLegit.textContent = json.mlPrediction?.legit || '—';
+      const percent = parseInt((json.mlPrediction?.malicious || '0%').replace('%','')) || 0;
+      progressEl.style.width = percent + '%'; riskText.textContent = `${percent}% Suspicious`;
+      const classification = json.mlPrediction?.classification || (percent >= 50 ? 'suspicious' : 'safe');
+      statusEl.textContent = classification === 'suspicious' ? '❌ SUSPICIOUS' : '✅ SAFE';
+      statusEl.classList.toggle('suspicious', classification === 'suspicious');
+      statusEl.classList.toggle('safe', classification !== 'suspicious');
+      if (json.mlPrediction?.reasons?.length) mlReasons.textContent = 'Reasons: ' + json.mlPrediction.reasons.join(' • ');
+      else mlReasons.textContent = '';
+    }
   </script>
 </body>
 </html>
