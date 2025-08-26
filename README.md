@@ -2,16 +2,7 @@
 
 Cryptera APK Detector is a project that provides both a backend API and a frontend interface to analyze APK files. The backend (built with Express) collects metadata, while the frontend (HTML & JavaScript) displays the results.
 
-## Project Structure
 
-```
-cybershield/
-├── backendMetadata.js         # Module to compute project metadata
-├── server.js                  # Express backend server
-├── public/
-│   └── index.html             # Frontend that calls the backend API
-└── README.md                  # Project documentation and instructions
-```
 
 ## Setup and Installation
 
@@ -58,8 +49,3 @@ If you prefer merging over rebasing, you can use:
 ```bash
 git pull origin main
 git push origin main
-```
-
-## License
-
-Specify your license information here.
