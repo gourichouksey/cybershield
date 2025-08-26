@@ -1,32 +1,65 @@
-# cybershield APK Detector
+# Cryptera APK Detector
 
-### Introduction
-Cryptera is a web-based tool for analyzing Android APK files to detect potential security risks and malicious behavior.
+Cryptera APK Detector is a project that provides both a backend API and a frontend interface to analyze APK files. The backend (built with Express) collects metadata, while the frontend (HTML & JavaScript) displays the results.
 
-### How to Push the README
-1.Stage the file: Tell Git to get the README.md file ready for a commit.
+## Project Structure
 
-git add README.md
+```
+cybershield/
+├── backendMetadata.js         # Module to compute project metadata
+├── server.js                  # Express backend server
+├── public/
+│   └── index.html             # Frontend that calls the backend API
+└── README.md                  # Project documentation and instructions
+```
 
-2.Commit the changes: Save the changes with a short, clear message.
+## Setup and Installation
 
-git commit -m "Add a detailed README file"
+1. **Clone the Repository**
+   
+   git clone https://github.com/gourichouksey/cybershield.git
+   cd cybershield
+   
 
-3.Push to GitHub: Send the committed changes to your repository.
+2. **Install Dependencies**
+   Make sure you have Node.js installed. Then run:
+   
+   npm install
+   
+   (If your project relies on external dependencies, add them to a `package.json` file.)
+
+3. **Run the Server**
+   
+   node server.js
+   
+   The server will start on port 3000 (or the port defined in your environment).
+
+4. **Access the Frontend**
+   Open your browser and navigate to:
+   
+   http://localhost:3000
+   
+   Click the "Start Scan" button to fetch and display details.
+
+## How to Push Code Changes
 
 
+1. **Pull Latest Changes**
+   
+   git pull --rebase origin main
+   
+
+2. **Push Your Changes**
+   
+   git push origin main
+   
+
+If you prefer merging over rebasing, you can use:
+```bash
+git pull origin main
 git push origin main
+```
 
-### Features
-APK File Upload: Upload .apk files for analysis.
-Permission Analysis: Get a breakdown of permissions requested by the app.
-Metadata & Signature: View key details and signature status.
-Simulated ML Score: Receive a suspiciousness score.
-Getting Started
-Clone: git clone https://github.com/your-username/cybershield.git
-Navigate: cd cryptera-backend
-Install: npm install
-Run: node server.js
-Access: Open http://localhost:5000 in your browser.
-Acknowledgements
-This project was built for the National cybrshield Hackathon 2025 by Team Cryptera.
+## License
+
+Specify your license information here.
