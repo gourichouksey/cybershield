@@ -1,0 +1,38 @@
+<!-- Frontend HTML to Display the Project Metadata -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Metadata</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .metadata { margin-top: 20px; }
+    .metadata div { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Project Metadata</h1>
+  <button id="fetch-btn">Fetch Metadata</button>
+  <div class="metadata" id="metadata">
+    <!-- Metadata will be displayed here -->
+  </div>
+
+  <script>
+    document.getElementById("fetch-btn").addEventListener("click", function() {
+      fetch('/api/metadata')
+        .then(response => response.json())
+        .then(data => {
+          const metadataDiv = document.getElementById("metadata");
+          metadataDiv.innerHTML = `
+            <div><strong>Package:</strong> ${data.package}</div>
+            <div><strong>Version:</strong> ${data.version}</div>
+            <div><strong>Size:</strong> ${data.size} bytes</div>
+          `;
+        })
+        .catch(error => {
+          console.error('Error fetching metadata:', error);
+        });
+    });
+  </script>
+</body>
+</html>
