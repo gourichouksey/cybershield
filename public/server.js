@@ -1,68 +1,66 @@
+// Express Server Setup for Cryptera APK Detector
+//
+// This server uses multer to handle file upload. It exposes an API endpoint (/api/scan)
+// that accepts an APK file upload, then (for now) returns placeholder scan results.
+// The returned JSON includes:
+//   • results: Scan message
+//   • metadata: { package, version, size }
+//   • permissionAnalysis: Analysis results for permissions
+//   • certificateSignature: Certificate details
+//   • mlPrediction: { malicious, legit }
+// The server also serves static files from the "public" folder.
+
 const express = require('express');
 const multer = require('multer');
 const path = require('path');
-const fs = require('fs');
-const cors = require('cors');
-
-const { analyzeApk } = require('./utils/apkAnalyzer');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-// Serve frontend static files from /public
-app.use('/', express.static(path.join(__dirname, 'public')));
-
-// Ensure uploads directory exists
-const UPLOAD_DIR = path.join(__dirname, 'uploads');
-if (!fs.existsSync(UPLOAD_DIR)) fs.mkdirSync(UPLOAD_DIR, { recursive: true });
-
-// multer config
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, UPLOAD_DIR),
-  filename: (req, file, cb) => cb(null, `${Date.now()}-${file.originalname}`)
-});
+// Set up multer with memory storage, limiting file size to 50MB.
+const storage = multer.memoryStorage();
 const upload = multer({
-  storage,
-  limits: { fileSize: 50 * 1024 * 1024 }, // 50MB
-  fileFilter: (req, file, cb) => {
-    if (!file.originalname.toLowerCase().endsWith('.apk')) {
-      cb(new Error('Only .apk files are allowed'));
-    } else {
-      cb(null, true);
+  storage: storage,
+  limits: { fileSize: 50 * 1024 * 1024 } // 50 MB
+});
+
+// API endpoint for scanning the APK file.
+app.post('/api/scan', upload.single('apkFile'), (req, res) => {
+  if (!req.file) {
+    return res.status(400).json({ error: "No file uploaded!" });
+  }
+  
+  // For demonstration: Retrieve file information.
+  const fileInfo = {
+    originalname: req.file.originalname,
+    mimetype: req.file.mimetype,
+    // Convert the file size from bytes to MB (with 2 decimals)
+    size: (req.file.size / (1024 * 1024)).toFixed(2) + " MB"
+  };
+
+  // Placeholder logic for file analysis.
+  // Replace the below details with your actual scanning logic.
+  const response = {
+    results: "No scan yet",
+    metadata: {
+      package: "com.example.app",     // Placeholder package name.
+      version: "1.0.0",               // Placeholder version.
+      size: fileInfo.size             // File size calculated above.
+    },
+    permissionAnalysis: "✅ INTERNET, ❌ READ_SMS, ❌ RECEIVE_BOOT_COMPLETED",
+    certificateSignature: "❌ Not signed by official cert",
+    mlPrediction: {
+      malicious: "87%",
+      legit: "13%"
     }
-  }
+  };
+
+  res.json(response);
 });
 
-app.post('/api/scan', upload.single('apk'), async (req, res) => {
-  if (!req.file) return res.status(400).json({ error: 'No APK uploaded (field name: apk)' });
+// Serve static files from the public folder.
+app.use(express.static(path.join(__dirname, 'public')));
 
-  const apkPath = req.file.path;
-  try {
-    const analysis = await analyzeApk(apkPath);
-
-    // delete uploaded file (best-effort)
-    fs.unlink(apkPath, (err) => {
-      if (err) console.warn('Failed to remove upload:', apkPath, err.message);
-    });
-
-    res.json(analysis);
-  } catch (err) {
-    console.error('Scan error:', err);
-    // cleanup
-    fs.unlink(apkPath, () => {});
-    res.status(500).json({ error: err.message || 'Internal server error' });
-  }
-});
-
-// Fallback: serve frontend file
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'cryptera-frontend.html'));
-});
-
-app.listen(PORT, () => {
-  console.log(`Cryptera backend listening on http://localhost:${PORT}`);
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
