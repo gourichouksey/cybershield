@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptera APK Detector</title>
+
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f9fafb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #0d47a1;
+      color: white;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Upload Section */
+    .upload-box {
+      text-align: center;
+      background: white;
+      margin: 2rem auto;
+      padding: 2rem;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .upload-label {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+    }
+    #apkUpload {
+      display: none;
+    }
+    .hint {
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+    .scan-btn {
+      margin-top: 1.5rem;
+      padding: 0.7rem 1.5rem;
+      background: #0d47a1;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .scan-btn:hover {
+      background: #1565c0;
+    }
+
+    /* Results Section */
+    .results {
+      width: 90%;
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .results h2 {
+      margin-bottom: 1rem;
+    }
+    .status {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .status.suspicious {
+      color: #d32f2f;
+    }
+    .status.safe {
+      color: #2e7d32;
+    }
+    .progress-bar {
+      background: #eee;
+      border-radius: 10px;
+      height: 15px;
+      margin: 0.5rem 0;
+      overflow: hidden;
+    }
+    .progress {
+      background: #f44336;
+      height: 100%;
+    }
+    .risk-text {
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    /* Cards Layout */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: #fafafa;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: #0d47a1;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Cryptera APK Detector</h1>
+    <p>Detect fake banking apps instantly</p>
+  </header>
+
+  <!-- Upload Section -->
+  <section class="upload-box">
+    <label for="apkUpload" class="upload-label">
+      📂 Upload APK File
+    </label>
+    <input type="file" id="apkUpload" accept=".apk">
+    <p class="hint">Supported file type: .apk (Max size: 50MB)</p>
+    <button class="scan-btn">🔍 Scan Now</button>
+  </section>
+
+  <!-- Results Section -->
+  <section class="results">
+    <h2>RESULTS</h2>
+    <div class="status suspicious">❌ SUSPICIOUS</div>
+    <div class="progress-bar">
+      <div class="progress" style="width: 82%;"></div>
+    </div>
+    <p class="risk-text">82% Suspicious</p>
+
+    <div class="cards">
+      <!-- Metadata -->
+      <div class="card">
+        <h3>Metadata</h3>
+        <p><b>Package Name:</b> com.sbi.mobilebankingg</p>
+        <p><b>Version:</b> 1.0.3</p>
+        <p><b>Size:</b> 12 MB</p>
+      </div>
+
+      <!-- Permissions -->
+      <div class="card">
+        <h3>Permission Analysis</h3>
+        <ul>
+          <li>✅ INTERNET</li>
+          <li>❌ READ_SMS</li>
+          <li>❌ RECEIVE_BOOT_COMPLETED</li>
+        </ul>
+      </div>
+
+      <!-- Certificate -->
+      <div class="card">
+        <h3>Certificate & Signature</h3>
+        <p>❌ Not signed by official SBI cert</p>
+      </div>
+
+      <!-- ML Prediction -->
+      <div class="card">
+        <h3>ML Prediction</h3>
+        <p><b>Malicious:</b> 87%</p>
+        <p><b>Legit:</b> 13%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made at National Cryptera Hackathon 2025 🚀 | Team Cryptera</p>
+  </footer>
+
+</body>
+</html>
