@@ -560,3 +560,168 @@
 {"level":"info","message":"1bb10759-6f61-4769-9dbf-df1521ec7cd2: Checking banking app characteristics","timestamp":"2025-08-27T17:48:51.671Z"}
 {"level":"info","message":"1bb10759-6f61-4769-9dbf-df1521ec7cd2: Running threat intelligence checks","timestamp":"2025-08-27T17:48:51.672Z"}
 {"level":"info","message":"1bb10759-6f61-4769-9dbf-df1521ec7cd2: Scan completed - Risk: medium, Fake: false","timestamp":"2025-08-27T17:48:55.190Z"}
+{"level":"info","message":"All services initialized successfully","timestamp":"2025-08-30T08:18:06.538Z"}
+{"level":"info","message":"APK Security Scanner running on port 3000","timestamp":"2025-08-30T08:18:06.553Z"}
+{"level":"info","message":"Environment: development","timestamp":"2025-08-30T08:18:06.555Z"}
+{"level":"info","message":"Starting APK scan - ID: 5fe11bd3-e9f7-4ede-8185-823e8ea4bcc4, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-08-30T08:19:04.193Z"}
+{"level":"info","message":"5fe11bd3-e9f7-4ede-8185-823e8ea4bcc4: Starting basic APK analysis","timestamp":"2025-08-30T08:19:04.195Z"}
+{"level":"info","message":"5fe11bd3-e9f7-4ede-8185-823e8ea4bcc4: Starting security scan","timestamp":"2025-08-30T08:19:09.843Z"}
+{"level":"info","message":"5fe11bd3-e9f7-4ede-8185-823e8ea4bcc4: Checking banking app characteristics","timestamp":"2025-08-30T08:19:13.101Z"}
+{"level":"info","message":"5fe11bd3-e9f7-4ede-8185-823e8ea4bcc4: Running threat intelligence checks","timestamp":"2025-08-30T08:19:13.106Z"}
+{"level":"info","message":"5fe11bd3-e9f7-4ede-8185-823e8ea4bcc4: Scan completed - Risk: medium, Fake: false","timestamp":"2025-08-30T08:19:18.867Z"}
+{"level":"info","message":"All services initialized successfully","timestamp":"2025-08-30T08:25:05.338Z"}
+{"level":"info","message":"APK Security Scanner running on port 3000","timestamp":"2025-08-30T08:25:05.345Z"}
+{"level":"info","message":"Environment: development","timestamp":"2025-08-30T08:25:05.346Z"}
+{"level":"info","message":"Starting APK scan - ID: bcf09474-8c6d-41f9-96bd-daf640ca53e0, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-08-30T08:25:31.746Z"}
+{"level":"info","message":"bcf09474-8c6d-41f9-96bd-daf640ca53e0: Starting basic APK analysis","timestamp":"2025-08-30T08:25:31.748Z"}
+{"level":"info","message":"bcf09474-8c6d-41f9-96bd-daf640ca53e0: Starting security scan","timestamp":"2025-08-30T08:25:38.077Z"}
+{"level":"info","message":"bcf09474-8c6d-41f9-96bd-daf640ca53e0: Checking banking app characteristics","timestamp":"2025-08-30T08:25:40.793Z"}
+{"level":"info","message":"bcf09474-8c6d-41f9-96bd-daf640ca53e0: Running threat intelligence checks","timestamp":"2025-08-30T08:25:40.799Z"}
+{"level":"info","message":"bcf09474-8c6d-41f9-96bd-daf640ca53e0: Scan completed - Risk: medium, Fake: false","timestamp":"2025-08-30T08:25:44.601Z"}
+{"level":"info","message":"All services initialized successfully","timestamp":"2025-08-31T06:01:59.095Z"}
+{"level":"info","message":"APK Security Scanner running on port 5000","timestamp":"2025-08-31T06:01:59.101Z"}
+{"level":"info","message":"Environment: development","timestamp":"2025-08-31T06:01:59.102Z"}
+{"level":"info","message":"All services initialized successfully","timestamp":"2025-08-31T06:03:40.198Z"}
+{"level":"info","message":"APK Security Scanner running on port 3000","timestamp":"2025-08-31T06:03:40.205Z"}
+{"level":"info","message":"Environment: development","timestamp":"2025-08-31T06:03:40.206Z"}
+{"level":"info","message":"All services initialized successfully","timestamp":"2025-08-31T06:04:31.840Z"}
+{"level":"info","message":"APK Security Scanner running on port 3000","timestamp":"2025-08-31T06:04:31.845Z"}
+{"level":"info","message":"Environment: development","timestamp":"2025-08-31T06:04:31.846Z"}
+{"level":"info","message":"Starting APK scan - ID: e5cab964-9133-4355-9cc7-445580a69bef, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-08-31T06:04:57.713Z"}
+{"level":"info","message":"e5cab964-9133-4355-9cc7-445580a69bef: Starting basic APK analysis","timestamp":"2025-08-31T06:04:57.714Z"}
+{"level":"info","message":"e5cab964-9133-4355-9cc7-445580a69bef: Starting security scan","timestamp":"2025-08-31T06:05:00.425Z"}
+{"level":"info","message":"e5cab964-9133-4355-9cc7-445580a69bef: Checking banking app characteristics","timestamp":"2025-08-31T06:05:01.451Z"}
+{"level":"info","message":"e5cab964-9133-4355-9cc7-445580a69bef: Running threat intelligence checks","timestamp":"2025-08-31T06:05:01.456Z"}
+{"level":"info","message":"e5cab964-9133-4355-9cc7-445580a69bef: Scan completed - Risk: medium, Fake: false","timestamp":"2025-08-31T06:05:04.956Z"}
+{"level":"info","message":"Starting APK scan - ID: 3ee49870-0016-4cba-8ef0-edbc427e0cd0, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-08-31T06:05:16.455Z"}
+{"level":"info","message":"3ee49870-0016-4cba-8ef0-edbc427e0cd0: Starting basic APK analysis","timestamp":"2025-08-31T06:05:16.460Z"}
+{"level":"info","message":"3ee49870-0016-4cba-8ef0-edbc427e0cd0: Starting security scan","timestamp":"2025-08-31T06:05:18.914Z"}
+{"level":"info","message":"3ee49870-0016-4cba-8ef0-edbc427e0cd0: Checking banking app characteristics","timestamp":"2025-08-31T06:05:19.996Z"}
+{"level":"info","message":"3ee49870-0016-4cba-8ef0-edbc427e0cd0: Running threat intelligence checks","timestamp":"2025-08-31T06:05:19.998Z"}
+{"level":"info","message":"3ee49870-0016-4cba-8ef0-edbc427e0cd0: Scan completed - Risk: medium, Fake: false","timestamp":"2025-08-31T06:05:21.042Z"}
+{"level":"info","message":"All services initialized successfully","timestamp":"2025-08-31T09:58:05.327Z"}
+{"level":"info","message":"APK Security Scanner running on port 3000","timestamp":"2025-08-31T09:58:05.333Z"}
+{"level":"info","message":"Environment: development","timestamp":"2025-08-31T09:58:05.333Z"}
+{"level":"info","message":"Starting APK scan - ID: 8f96c6b9-c657-42b2-9a51-67380660f384, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-08-31T10:21:21.519Z"}
+{"level":"info","message":"8f96c6b9-c657-42b2-9a51-67380660f384: Starting basic APK analysis","timestamp":"2025-08-31T10:21:21.521Z"}
+{"level":"info","message":"8f96c6b9-c657-42b2-9a51-67380660f384: Starting security scan","timestamp":"2025-08-31T10:21:24.176Z"}
+{"level":"info","message":"8f96c6b9-c657-42b2-9a51-67380660f384: Checking banking app characteristics","timestamp":"2025-08-31T10:21:25.228Z"}
+{"level":"info","message":"8f96c6b9-c657-42b2-9a51-67380660f384: Running threat intelligence checks","timestamp":"2025-08-31T10:21:25.238Z"}
+{"level":"info","message":"8f96c6b9-c657-42b2-9a51-67380660f384: Scan completed - Risk: medium, Fake: false","timestamp":"2025-08-31T10:21:28.905Z"}
+{"level":"info","message":"Starting APK scan - ID: 7aaa7560-62be-4fd2-a54a-6013a4cf2a05, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-08-31T10:24:21.697Z"}
+{"level":"info","message":"7aaa7560-62be-4fd2-a54a-6013a4cf2a05: Starting basic APK analysis","timestamp":"2025-08-31T10:24:21.699Z"}
+{"level":"info","message":"7aaa7560-62be-4fd2-a54a-6013a4cf2a05: Starting security scan","timestamp":"2025-08-31T10:24:23.992Z"}
+{"level":"info","message":"7aaa7560-62be-4fd2-a54a-6013a4cf2a05: Checking banking app characteristics","timestamp":"2025-08-31T10:24:24.915Z"}
+{"level":"info","message":"7aaa7560-62be-4fd2-a54a-6013a4cf2a05: Running threat intelligence checks","timestamp":"2025-08-31T10:24:24.915Z"}
+{"level":"info","message":"7aaa7560-62be-4fd2-a54a-6013a4cf2a05: Scan completed - Risk: medium, Fake: false","timestamp":"2025-08-31T10:24:26.777Z"}
+{"level":"info","message":"Starting APK scan - ID: ee0c1dbb-c766-48df-b36e-f25768e8c9f5, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-08-31T10:31:20.579Z"}
+{"level":"info","message":"ee0c1dbb-c766-48df-b36e-f25768e8c9f5: Starting basic APK analysis","timestamp":"2025-08-31T10:31:20.579Z"}
+{"level":"info","message":"ee0c1dbb-c766-48df-b36e-f25768e8c9f5: Starting security scan","timestamp":"2025-08-31T10:31:22.911Z"}
+{"level":"info","message":"ee0c1dbb-c766-48df-b36e-f25768e8c9f5: Checking banking app characteristics","timestamp":"2025-08-31T10:31:23.864Z"}
+{"level":"info","message":"ee0c1dbb-c766-48df-b36e-f25768e8c9f5: Running threat intelligence checks","timestamp":"2025-08-31T10:31:23.866Z"}
+{"level":"info","message":"ee0c1dbb-c766-48df-b36e-f25768e8c9f5: Scan completed - Risk: medium, Fake: false","timestamp":"2025-08-31T10:31:27.086Z"}
+{"level":"info","message":"Starting APK scan - ID: f95e6878-b5c2-456a-a4d9-edf2adea8f9b, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-08-31T10:39:48.515Z"}
+{"level":"info","message":"f95e6878-b5c2-456a-a4d9-edf2adea8f9b: Starting basic APK analysis","timestamp":"2025-08-31T10:39:48.517Z"}
+{"level":"info","message":"f95e6878-b5c2-456a-a4d9-edf2adea8f9b: Starting security scan","timestamp":"2025-08-31T10:39:51.505Z"}
+{"level":"info","message":"f95e6878-b5c2-456a-a4d9-edf2adea8f9b: Checking banking app characteristics","timestamp":"2025-08-31T10:39:52.993Z"}
+{"level":"info","message":"f95e6878-b5c2-456a-a4d9-edf2adea8f9b: Running threat intelligence checks","timestamp":"2025-08-31T10:39:52.994Z"}
+{"level":"info","message":"f95e6878-b5c2-456a-a4d9-edf2adea8f9b: Scan completed - Risk: medium, Fake: false","timestamp":"2025-08-31T10:39:55.023Z"}
+{"level":"info","message":"Starting APK scan - ID: c05fc01c-e535-45c2-b197-d764ebe9db37, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-08-31T17:04:44.035Z"}
+{"level":"info","message":"c05fc01c-e535-45c2-b197-d764ebe9db37: Starting basic APK analysis","timestamp":"2025-08-31T17:04:44.036Z"}
+{"level":"info","message":"c05fc01c-e535-45c2-b197-d764ebe9db37: Starting security scan","timestamp":"2025-08-31T17:04:46.585Z"}
+{"level":"info","message":"c05fc01c-e535-45c2-b197-d764ebe9db37: Checking banking app characteristics","timestamp":"2025-08-31T17:04:47.698Z"}
+{"level":"info","message":"c05fc01c-e535-45c2-b197-d764ebe9db37: Running threat intelligence checks","timestamp":"2025-08-31T17:04:47.699Z"}
+{"level":"info","message":"c05fc01c-e535-45c2-b197-d764ebe9db37: Scan completed - Risk: medium, Fake: false","timestamp":"2025-08-31T17:04:49.733Z"}
+{"level":"info","message":"Starting APK scan - ID: 1050af75-f17c-476f-9430-6565e4f91f8d, File: NetMirrorTVapp.apk","timestamp":"2025-08-31T17:23:00.936Z"}
+{"level":"info","message":"1050af75-f17c-476f-9430-6565e4f91f8d: Starting basic APK analysis","timestamp":"2025-08-31T17:23:00.937Z"}
+{"level":"info","message":"1050af75-f17c-476f-9430-6565e4f91f8d: Starting security scan","timestamp":"2025-08-31T17:23:01.583Z"}
+{"level":"info","message":"1050af75-f17c-476f-9430-6565e4f91f8d: Checking banking app characteristics","timestamp":"2025-08-31T17:23:01.820Z"}
+{"level":"info","message":"1050af75-f17c-476f-9430-6565e4f91f8d: Running threat intelligence checks","timestamp":"2025-08-31T17:23:01.824Z"}
+{"level":"info","message":"1050af75-f17c-476f-9430-6565e4f91f8d: Scan completed - Risk: critical, Fake: true","timestamp":"2025-08-31T17:23:04.677Z"}
+{"level":"info","message":"All services initialized successfully","timestamp":"2025-09-01T14:52:40.649Z"}
+{"level":"info","message":"APK Security Scanner running on port 3000","timestamp":"2025-09-01T14:52:40.655Z"}
+{"level":"info","message":"Environment: development","timestamp":"2025-09-01T14:52:40.656Z"}
+{"level":"info","message":"Starting APK scan - ID: 45222993-e56d-45b3-b48f-908fdc30d87b, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-09-01T14:53:03.607Z"}
+{"level":"info","message":"45222993-e56d-45b3-b48f-908fdc30d87b: Starting basic APK analysis","timestamp":"2025-09-01T14:53:03.608Z"}
+{"level":"info","message":"45222993-e56d-45b3-b48f-908fdc30d87b: Starting security scan","timestamp":"2025-09-01T14:53:06.420Z"}
+{"level":"info","message":"45222993-e56d-45b3-b48f-908fdc30d87b: Checking banking app characteristics","timestamp":"2025-09-01T14:53:07.678Z"}
+{"level":"info","message":"45222993-e56d-45b3-b48f-908fdc30d87b: Running threat intelligence checks","timestamp":"2025-09-01T14:53:07.686Z"}
+{"level":"info","message":"45222993-e56d-45b3-b48f-908fdc30d87b: Scan completed - Risk: medium, Fake: false","timestamp":"2025-09-01T14:53:11.235Z"}
+{"level":"info","message":"All services initialized successfully","timestamp":"2025-09-01T14:56:18.792Z"}
+{"level":"info","message":"APK Security Scanner running on port 3000","timestamp":"2025-09-01T14:56:18.797Z"}
+{"level":"info","message":"Environment: development","timestamp":"2025-09-01T14:56:18.798Z"}
+{"level":"info","message":"Starting APK scan - ID: 2ca84235-f009-4e3a-9f83-5c674d3dc0d5, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-09-01T14:58:13.988Z"}
+{"level":"info","message":"2ca84235-f009-4e3a-9f83-5c674d3dc0d5: Starting basic APK analysis","timestamp":"2025-09-01T14:58:13.991Z"}
+{"level":"info","message":"2ca84235-f009-4e3a-9f83-5c674d3dc0d5: Starting security scan","timestamp":"2025-09-01T14:58:16.690Z"}
+{"level":"info","message":"2ca84235-f009-4e3a-9f83-5c674d3dc0d5: Checking banking app characteristics","timestamp":"2025-09-01T14:58:17.727Z"}
+{"level":"info","message":"2ca84235-f009-4e3a-9f83-5c674d3dc0d5: Running threat intelligence checks","timestamp":"2025-09-01T14:58:17.729Z"}
+{"level":"info","message":"2ca84235-f009-4e3a-9f83-5c674d3dc0d5: Scan completed - Risk: medium, Fake: false","timestamp":"2025-09-01T14:58:20.650Z"}
+{"level":"info","message":"Starting APK scan - ID: 5d40ab67-382d-4cdd-b3e5-481cf1e21d92, File: NetMirrorTVapp.apk","timestamp":"2025-09-01T15:02:40.514Z"}
+{"level":"info","message":"5d40ab67-382d-4cdd-b3e5-481cf1e21d92: Starting basic APK analysis","timestamp":"2025-09-01T15:02:40.515Z"}
+{"level":"info","message":"5d40ab67-382d-4cdd-b3e5-481cf1e21d92: Starting security scan","timestamp":"2025-09-01T15:02:41.268Z"}
+{"level":"info","message":"5d40ab67-382d-4cdd-b3e5-481cf1e21d92: Checking banking app characteristics","timestamp":"2025-09-01T15:02:41.501Z"}
+{"level":"info","message":"5d40ab67-382d-4cdd-b3e5-481cf1e21d92: Running threat intelligence checks","timestamp":"2025-09-01T15:02:41.503Z"}
+{"level":"info","message":"5d40ab67-382d-4cdd-b3e5-481cf1e21d92: Scan completed - Risk: critical, Fake: true","timestamp":"2025-09-01T15:02:44.060Z"}
+{"level":"info","message":"Starting APK scan - ID: 21719081-3999-4933-99f0-2189c17832b4, File: NetMirrorTVapp.apk","timestamp":"2025-09-01T15:04:39.525Z"}
+{"level":"info","message":"21719081-3999-4933-99f0-2189c17832b4: Starting basic APK analysis","timestamp":"2025-09-01T15:04:39.525Z"}
+{"level":"info","message":"21719081-3999-4933-99f0-2189c17832b4: Starting security scan","timestamp":"2025-09-01T15:04:40.258Z"}
+{"level":"info","message":"21719081-3999-4933-99f0-2189c17832b4: Checking banking app characteristics","timestamp":"2025-09-01T15:04:40.471Z"}
+{"level":"info","message":"21719081-3999-4933-99f0-2189c17832b4: Running threat intelligence checks","timestamp":"2025-09-01T15:04:40.473Z"}
+{"level":"info","message":"21719081-3999-4933-99f0-2189c17832b4: Scan completed - Risk: critical, Fake: true","timestamp":"2025-09-01T15:04:42.613Z"}
+{"level":"info","message":"Starting APK scan - ID: fe570ed8-579d-4e2f-896f-d31b4598df1f, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-09-01T15:04:58.505Z"}
+{"level":"info","message":"fe570ed8-579d-4e2f-896f-d31b4598df1f: Starting basic APK analysis","timestamp":"2025-09-01T15:04:58.509Z"}
+{"level":"info","message":"fe570ed8-579d-4e2f-896f-d31b4598df1f: Starting security scan","timestamp":"2025-09-01T15:05:01.047Z"}
+{"level":"info","message":"fe570ed8-579d-4e2f-896f-d31b4598df1f: Checking banking app characteristics","timestamp":"2025-09-01T15:05:02.268Z"}
+{"level":"info","message":"fe570ed8-579d-4e2f-896f-d31b4598df1f: Running threat intelligence checks","timestamp":"2025-09-01T15:05:02.269Z"}
+{"level":"info","message":"fe570ed8-579d-4e2f-896f-d31b4598df1f: Scan completed - Risk: medium, Fake: false","timestamp":"2025-09-01T15:05:04.110Z"}
+{"level":"info","message":"Starting APK scan - ID: e3fc6b92-778d-48a2-ba58-092484297e92, File: NetMirrorTVapp.apk","timestamp":"2025-09-01T15:06:34.350Z"}
+{"level":"info","message":"e3fc6b92-778d-48a2-ba58-092484297e92: Starting basic APK analysis","timestamp":"2025-09-01T15:06:34.351Z"}
+{"level":"info","message":"e3fc6b92-778d-48a2-ba58-092484297e92: Starting security scan","timestamp":"2025-09-01T15:06:35.028Z"}
+{"level":"info","message":"e3fc6b92-778d-48a2-ba58-092484297e92: Checking banking app characteristics","timestamp":"2025-09-01T15:06:35.218Z"}
+{"level":"info","message":"e3fc6b92-778d-48a2-ba58-092484297e92: Running threat intelligence checks","timestamp":"2025-09-01T15:06:35.219Z"}
+{"level":"info","message":"e3fc6b92-778d-48a2-ba58-092484297e92: Scan completed - Risk: critical, Fake: true","timestamp":"2025-09-01T15:06:37.209Z"}
+{"level":"info","message":"Starting APK scan - ID: f40b4ec0-df45-47d0-841d-0062532d472f, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-09-01T15:06:46.310Z"}
+{"level":"info","message":"f40b4ec0-df45-47d0-841d-0062532d472f: Starting basic APK analysis","timestamp":"2025-09-01T15:06:46.312Z"}
+{"level":"info","message":"f40b4ec0-df45-47d0-841d-0062532d472f: Starting security scan","timestamp":"2025-09-01T15:06:48.863Z"}
+{"level":"info","message":"f40b4ec0-df45-47d0-841d-0062532d472f: Checking banking app characteristics","timestamp":"2025-09-01T15:06:49.883Z"}
+{"level":"info","message":"f40b4ec0-df45-47d0-841d-0062532d472f: Running threat intelligence checks","timestamp":"2025-09-01T15:06:49.887Z"}
+{"level":"info","message":"f40b4ec0-df45-47d0-841d-0062532d472f: Scan completed - Risk: medium, Fake: false","timestamp":"2025-09-01T15:06:51.734Z"}
+{"level":"info","message":"Starting APK scan - ID: 75acdae0-d702-4da2-baac-8c874db454d5, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-09-01T15:06:59.654Z"}
+{"level":"info","message":"75acdae0-d702-4da2-baac-8c874db454d5: Starting basic APK analysis","timestamp":"2025-09-01T15:06:59.654Z"}
+{"level":"info","message":"75acdae0-d702-4da2-baac-8c874db454d5: Starting security scan","timestamp":"2025-09-01T15:07:02.229Z"}
+{"level":"info","message":"75acdae0-d702-4da2-baac-8c874db454d5: Checking banking app characteristics","timestamp":"2025-09-01T15:07:03.441Z"}
+{"level":"info","message":"75acdae0-d702-4da2-baac-8c874db454d5: Running threat intelligence checks","timestamp":"2025-09-01T15:07:03.441Z"}
+{"level":"info","message":"75acdae0-d702-4da2-baac-8c874db454d5: Scan completed - Risk: medium, Fake: false","timestamp":"2025-09-01T15:07:05.357Z"}
+{"level":"info","message":"Starting APK scan - ID: 441219f9-9f15-41dc-83b2-51d48361ccbd, File: NetMirrorTVapp.apk","timestamp":"2025-09-01T15:07:57.740Z"}
+{"level":"info","message":"441219f9-9f15-41dc-83b2-51d48361ccbd: Starting basic APK analysis","timestamp":"2025-09-01T15:07:57.741Z"}
+{"level":"info","message":"441219f9-9f15-41dc-83b2-51d48361ccbd: Starting security scan","timestamp":"2025-09-01T15:07:58.470Z"}
+{"level":"info","message":"441219f9-9f15-41dc-83b2-51d48361ccbd: Checking banking app characteristics","timestamp":"2025-09-01T15:07:58.782Z"}
+{"level":"info","message":"441219f9-9f15-41dc-83b2-51d48361ccbd: Running threat intelligence checks","timestamp":"2025-09-01T15:07:58.783Z"}
+{"level":"info","message":"441219f9-9f15-41dc-83b2-51d48361ccbd: Scan completed - Risk: critical, Fake: true","timestamp":"2025-09-01T15:08:00.921Z"}
+{"level":"info","message":"Starting APK scan - ID: f34ecf4c-129f-4b91-96c5-b4865e250eab, File: NetMirrorTVapp.apk","timestamp":"2025-09-01T15:08:12.294Z"}
+{"level":"info","message":"f34ecf4c-129f-4b91-96c5-b4865e250eab: Starting basic APK analysis","timestamp":"2025-09-01T15:08:12.297Z"}
+{"level":"info","message":"f34ecf4c-129f-4b91-96c5-b4865e250eab: Starting security scan","timestamp":"2025-09-01T15:08:12.990Z"}
+{"level":"info","message":"f34ecf4c-129f-4b91-96c5-b4865e250eab: Checking banking app characteristics","timestamp":"2025-09-01T15:08:13.205Z"}
+{"level":"info","message":"f34ecf4c-129f-4b91-96c5-b4865e250eab: Running threat intelligence checks","timestamp":"2025-09-01T15:08:13.206Z"}
+{"level":"info","message":"f34ecf4c-129f-4b91-96c5-b4865e250eab: Scan completed - Risk: critical, Fake: true","timestamp":"2025-09-01T15:08:15.192Z"}
+{"level":"info","message":"All services initialized successfully","timestamp":"2025-09-01T15:12:29.427Z"}
+{"level":"info","message":"APK Security Scanner running on port 3000","timestamp":"2025-09-01T15:12:29.437Z"}
+{"level":"info","message":"Environment: development","timestamp":"2025-09-01T15:12:29.438Z"}
+{"level":"info","message":"All services initialized successfully","timestamp":"2025-09-01T15:15:28.789Z"}
+{"level":"info","message":"APK Security Scanner running on port 3000","timestamp":"2025-09-01T15:15:28.793Z"}
+{"level":"info","message":"Environment: development","timestamp":"2025-09-01T15:15:28.793Z"}
+{"level":"info","message":"Starting APK scan - ID: 29b9b0ba-217a-4f15-a10a-79a094f9f718, File: NetMirrorTVapp.apk","timestamp":"2025-09-01T15:15:55.561Z"}
+{"level":"info","message":"29b9b0ba-217a-4f15-a10a-79a094f9f718: Starting basic APK analysis","timestamp":"2025-09-01T15:15:55.565Z"}
+{"level":"info","message":"29b9b0ba-217a-4f15-a10a-79a094f9f718: Starting security scan","timestamp":"2025-09-01T15:15:56.191Z"}
+{"level":"info","message":"29b9b0ba-217a-4f15-a10a-79a094f9f718: Checking banking app characteristics","timestamp":"2025-09-01T15:15:56.388Z"}
+{"level":"info","message":"29b9b0ba-217a-4f15-a10a-79a094f9f718: Running threat intelligence checks","timestamp":"2025-09-01T15:15:56.389Z"}
+{"level":"info","message":"29b9b0ba-217a-4f15-a10a-79a094f9f718: Scan completed - Risk: critical, Fake: true","timestamp":"2025-09-01T15:16:07.608Z"}
+{"level":"info","message":"Starting APK scan - ID: 97fac890-5a33-4f14-929c-4b60b7c778d4, File: com.google.android.apps.youtube.music_2.11.57-21157310_minAPI16(armeabi)(nodpi)_apkmirror.com.apk","timestamp":"2025-09-01T15:16:24.912Z"}
+{"level":"info","message":"97fac890-5a33-4f14-929c-4b60b7c778d4: Starting basic APK analysis","timestamp":"2025-09-01T15:16:24.915Z"}
+{"level":"info","message":"97fac890-5a33-4f14-929c-4b60b7c778d4: Starting security scan","timestamp":"2025-09-01T15:16:27.545Z"}
+{"level":"info","message":"97fac890-5a33-4f14-929c-4b60b7c778d4: Checking banking app characteristics","timestamp":"2025-09-01T15:16:28.641Z"}
+{"level":"info","message":"97fac890-5a33-4f14-929c-4b60b7c778d4: Running threat intelligence checks","timestamp":"2025-09-01T15:16:28.641Z"}
+{"level":"info","message":"97fac890-5a33-4f14-929c-4b60b7c778d4: Scan completed - Risk: medium, Fake: false","timestamp":"2025-09-01T15:16:30.809Z"}
+{"level":"info","message":"All services initialized successfully","timestamp":"2025-09-01T15:30:39.328Z"}
+{"level":"info","message":"APK Security Scanner running on port 3000","timestamp":"2025-09-01T15:30:39.333Z"}
+{"level":"info","message":"Environment: development","timestamp":"2025-09-01T15:30:39.333Z"}
